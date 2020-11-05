@@ -1,0 +1,24 @@
+{
+	"name": "SourceDataset_jb5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ghassenstockage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "valeursfoncieres-2015.txt",
+				"container": "immocontainer"
+			},
+			"columnDelimiter": "|",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
